@@ -52,7 +52,7 @@ const Navbar = () => {
                     console.log("result is"+ result)
                     navigate('/login')
                 }} className="text-red-700 border-2 border-white px-3 py-2 rounded-xl hover:bg-white">
-                    SignOutt
+                    SignOut
                 </button>
                 {/* <Button btn="Signin" link="/movie"/> */}
                 <div className="text-red-600">
