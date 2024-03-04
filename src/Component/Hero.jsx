@@ -1,3 +1,4 @@
+import { Button } from "flowbite-react";
 import React from "react";
 
 function Hero() {
@@ -5,11 +6,17 @@ function Hero() {
    return (
       <div >
 
-         <div className="flex p-20 justify-center items-center flex-col gap-7 text-3xl text-white  font-bold">
-            <h4 >Welcome Back to <span className="text-red-700">NETFLIX</span></h4>
+         <div className="flex p-20 justify-center  items-center flex-col gap-8  text-4xl text-white  font-bold">
+            <h4 className="text-7xl font-serif">What's  <span className="text-red-700">Next</span> </h4>
 
-            <h2 className="font-extrabold text-5xl">Unlimited movies,TV shows and more</h2>
-         </div>
+            <h2 className=" text-3xl font-light">Watch anywhere at anytime</h2>
+            
+           
+            <Button className="bg-red-600 hover:bg ">WATCH FREE FOR 30 DAYS</Button>
+           
+            </div>
+         
+    
 
         
          <div class="relative mx-auto border-gray-800 dark:border-gray-800  bg-gray-800 border-[16px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Movie = ({ x, y, z }) => {
+const Moviefeature = ({ x, y, z }) => {
     return (
         <div className="text-red-700 bg-black bg-opacity-15 bg-blend-darken   w-full flex items-center justify-between p-20">
             {/* left */}
@@ -29,4 +29,4 @@ const Movie = ({ x, y, z }) => {
     )
 }
 
-export default Movie
+export default Moviefeature
