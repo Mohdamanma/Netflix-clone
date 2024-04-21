@@ -2,11 +2,12 @@
 import React from "react";
 import Button from "./Button"
 import logo from "../logo.png"
-import {useNavigate } from 'react-router-dom'
+import {Link, useNavigate } from 'react-router-dom'
 import {
     signOut,
 } from "firebase/auth";
 import { auth } from "../firebase"
+import MainPage from "../login/MainPage";
 
 const Navbar = () => {
 
@@ -31,8 +32,9 @@ const Navbar = () => {
         <div className="flex flex-col  md:flex-row p-4 w-full justify-between z-[100] absolute bg-black text-white items-center bg-transparent ">
             {/* <div className="flex w-full justify-between items-center"> */}
                 {/* <div className="text-red-700 h-10 text-2xl"> */}
-                  
+                  <Link to={"/"}>
                     <img className="w-28" src={logo} alt="image" />
+                    </Link>
                 {/* </div> */}
                 {/* Hamburger */}
 
