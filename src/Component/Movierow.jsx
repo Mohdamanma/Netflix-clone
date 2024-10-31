@@ -40,16 +40,16 @@ function Movierow(props) {
     return (
         <div className='mx-10 w-full'>
             {/* poster*/}
-            <h2 className='text-white text-2xl pt-9 font-bold'>{props.title}</h2>
+            <h2 className='text-white text-4xl pt-9 font-sans font-bold'>{props.title}</h2>
 
                 <div className='flex w-full text-black mt-10 overflow-x-scroll gap-8' style={{ scrollbarWidth: 'none', '-ms-overflow-style': 'none' }}>
             {movie.map((obj) => (
-                     <div> 
-                        <div className='w-52'>
-                        <img onClick={() => movieTrailer(obj.id)} className='w-52 h-64 hover:scale-110' alt='poster' src={`${imageUrl + obj.backdrop_path}`} />
+                     
+                        <div className='h-64'>
+                        <img onClick={() => movieTrailer(obj.id)} className='object-cover max-w-72 h-48 hover:scale-110' alt='poster' src={`${imageUrl + obj.backdrop_path}`} />
                       </div>
-                        <p className='text-white font-semibold text-center pt-4'>{obj.title}</p>
-                     </div>
+                        /* <p className='text-white font-semibold text-center pt-4'>{obj.title}</p> */
+                     
                     ))}
                     </div>
             {urlId && <YouTube opts={opts} videoId={urlId.key} />}

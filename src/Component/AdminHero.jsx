@@ -30,7 +30,7 @@ function AdminHero() {
    }
 
     return (
-       <div className='w-full h-[550px]'>
+       <div className='w-full h-[550px] '>
         <div className='w-full h-full'>
             <div className='absolute w-full h-[600px] bg-gradient-to-r from-black'>
         <img className='w-full h-full object-cover'   src={`https://image.tmdb.org/t/p/original/${movies?.backdrop_path}`} alt={movies?.title} />

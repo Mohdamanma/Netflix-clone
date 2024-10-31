@@ -25,9 +25,10 @@ function Adminpage() {
     return (
       <div className='w-full h-full'>
         <AdminHero />
-        <div className='flex flex-col mb-16 mt-11 '>
-          <Movierow url={orginal} title="Netflix Orginal" />
-          <Movierow url={action} title="Action" />
+        <div className='flex flex-col  mt-11 '>
+          <Movierow url={orginal} title="Popular on Netflix"  />
+          <Movierow url={orginal}   />
+          <Movierow url={action} title="Trending Now" />
           <Movierow url={crime} title="crime" />
           <Movierow url={war} title="Action" />
           <Movierow url={animation} title="Animation" />
