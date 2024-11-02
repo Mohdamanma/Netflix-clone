@@ -17,11 +17,11 @@ function Login() {
         e.preventDefault();
         try {
     const  userCredential= await signInWithEmailAndPassword (auth, email, password) ;
-        console.log(userCredential);   
+        console.log(userCredential);
         const user = userCredential.user;
         localStorage.setItem("token",user.accessToken);
         localStorage.setItem("user",JSON.stringify(user));
-        
+
         navigate("/adminpage")
         } catch (err) {
             console.error(err);
@@ -82,7 +82,7 @@ function Login() {
                                         />
                                     </div>
 
-                                   
+
                                 </div>
 
                                 <div class="flex items-center justify-between">
@@ -97,7 +97,7 @@ function Login() {
                                     <a href="#" class="text-sm font-medium text-primary-600 hover:underline text-white ">Forgot password?</a>
                                 </div>
                                 <Link to={"/adminpage"}>
-                                    <button type="submit" className="w-full pt-4 text-white bg-primary-600  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-3 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Login</button>
+                                    <button type="submit" className="w-full pt-4 text-white bg-primary-600  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium  text-sm px-3 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 border-2 border-white  mt-4 rounded-full">Login</button>
                                 </Link>
                                 <div className='flex gap-2 bg-white-500 hover:bg-blue-500 border-2 rounded-full py-2'>
                                     <img src="/google-g-icon.png" alt="Google Logo"
